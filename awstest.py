@@ -9,4 +9,5 @@ print(ec2infodict['Reservations'][0]['Instances'][0]['State'])
 instanceId = ec2infodict['Reservations'][0]['Instances'][0]['InstanceId']
 ec2client.stop_instances(InstanceIds=[instanceId])
 print(ec2client.describe_instance_status())
+print("it works")
 # ec2client.start_instances(InstanceIds=[instanceId])
